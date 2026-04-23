@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ESP32 Motor Control</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topnav">
+    <h1>ESP32 Motor Control Panel</h1>
+  </div>
+
+  <div class="content">
+    <div class="card-grid">
+
+      <div class="card">
+        <h2>Motor 1</h2>
+        <div class="button-group">
+          <button class="cw" onclick="sendMotorCommand(1, 'CW')">Clockwise</button>
+          <button class="ccw" onclick="sendMotorCommand(1, 'CCW')">Counterclockwise</button>
+          <button class="stop" onclick="sendMotorCommand(1, 'STOP')">Stop</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Motor 2</h2>
+        <div class="button-group">
+          <button class="cw" onclick="sendMotorCommand(2, 'CW')">Clockwise</button>
+          <button class="ccw" onclick="sendMotorCommand(2, 'CCW')">Counterclockwise</button>
+          <button class="stop" onclick="sendMotorCommand(2, 'STOP')">Stop</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Motor 3</h2>
+        <div class="button-group">
+          <button class="cw" onclick="sendMotorCommand(3, 'CW')">Clockwise</button>
+          <button class="ccw" onclick="sendMotorCommand(3, 'CCW')">Counterclockwise</button>
+          <button class="stop" onclick="sendMotorCommand(3, 'STOP')">Stop</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Motor 4</h2>
+        <div class="button-group">
+          <button class="cw" onclick="sendMotorCommand(4, 'CW')">Clockwise</button>
+          <button class="ccw" onclick="sendMotorCommand(4, 'CCW')">Counterclockwise</button>
+          <button class="stop" onclick="sendMotorCommand(4, 'STOP')">Stop</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Motor 5</h2>
+        <div class="button-group">
+          <button class="cw" onclick="sendMotorCommand(5, 'CW')">Clockwise</button>
+          <button class="ccw" onclick="sendMotorCommand(5, 'CCW')">Counterclockwise</button>
+          <button class="stop" onclick="sendMotorCommand(5, 'STOP')">Stop</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
